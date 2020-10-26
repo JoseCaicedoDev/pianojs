@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Piano C</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Teclado nota musical</h1>
+      <p>Utilice las letras del teclado para generar la nota musical</p>
+    </header>
+    <main>
+      <div class="songs">
+        <div data-key="65" class="song">
+          <kbd>Do</kbd>
+          <span>Tecla A</span>
+        </div>
+        <div data-key="83" class="song">
+          <kbd>Re</kbd>
+          <span>Tecla S</span>
+        </div>
+        <div data-key="68" class="song">
+          <kbd>Mi</kbd>
+          <span>Tecla D</span>
+        </div>
+        <div data-key="70" class="song">
+          <kbd>Fa</kbd>
+          <span>Tecla F</span>
+        </div>
+        <div data-key="71" class="song">
+          <kbd>Sol</kbd>
+          <span>Tecla G</span>
+        </div>
+        <div data-key="72" class="song">
+          <kbd>La</kbd>
+          <span>Tecla H</span>
+        </div>
+        <div data-key="74" class="song">
+          <kbd>Si</kbd>
+          <span>Tecla J</span>
+        </div>
+        <div data-key="75" class="song">
+          <kbd>Do</kbd>
+          <span>Tecla K</span>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <button onclick="musicCucaracha()">La cucaracha</button>
+    </aside>
+    <!-- 
+    <footer>hola</footer> -->
+
+    <audio data-key="65" src="sounds/do.wav"></audio>
+    <audio data-key="83" src="sounds/re.wav"></audio>
+    <audio data-key="68" src="sounds/mi.wav"></audio>
+    <audio data-key="70" src="sounds/fa.wav"></audio>
+    <audio data-key="71" src="sounds/sol.wav"></audio>
+    <audio data-key="72" src="sounds/la.wav"></audio>
+    <audio data-key="74" src="sounds/si.wav"></audio>
+    <audio data-key="75" src="sounds/do.wav"></audio>
+  </body>
+</html>
