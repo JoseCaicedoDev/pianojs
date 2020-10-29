@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <h1>Teclado nota musical</h1>
+      <h1>Teclado musical</h1>
       <p>Utilice las letras del teclado para generar la nota musical</p>
     </header>
     <main>
@@ -49,11 +49,37 @@
         </div>
       </div>
     </main>
+    <div class="content">
+      <h3>Práctica la secuencia</h3>
+      <p>Reproduzca las canciones grabadas y siga las teclas utilizadas</p>
+    </div>
     <aside>
-      <button onclick="musicCucaracha()">La cucaracha</button>
+      <div class="content_letter">
+        <h3>La cucaracha (letra)</h3>
+        <p>La cucaracha, la cucaracha</p>
+        <p>ya no puede caminar;</p>
+        <p>porque no tiene, porque le falta</p>
+        <p>la patita de atrás.</p>
+      </div>
+      <div class="content_note">
+        <h3>Notas de la canción:</h3>
+        <p>do do do fa la</p>
+        <p>do do do fa la</p>
+        <p>fa fa mi mi re re do</p>
+        <p>do do do mi sol</p>
+        <p>do do do mi sol</p>
+        <p>do' re' do' sib la sol fa</p>
+      </div>
+      <div class="content_button">
+        <button onclick="musicCucaracha()">Reproducir</button>
+      </div>
     </aside>
-    <!-- 
-    <footer>hola</footer> -->
+    <footer>
+      <p>By</p>
+      <a href="https://www.linkedin.com/in/jose-caicedo/"
+        ><img src="image/JC_negro.png" alt="logo del desarrollador"
+      /></a>
+    </footer>
 
     <audio data-key="65" src="sounds/do.wav"></audio>
     <audio data-key="83" src="sounds/re.wav"></audio>
