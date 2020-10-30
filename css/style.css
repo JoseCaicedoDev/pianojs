@@ -68,19 +68,35 @@ footer img {
 .song {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-end;
   border: 0.05rem solid var(--color-black);
   border-radius: 0.5rem;
   transition: all 0.05s ease;
   background-color: #fff;
 }
+.song_key {
+  width: 1.5rem;
+  height: 10rem;
+  border-bottom-left-radius: 5px;
+  background-color: var(--color-black);
+}
+.song_key_finish {
+  height: 10rem;
+  background-color: transparent;
+}
+.key_description {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 kbd {
   font-size: 2rem;
+  margin-top: 1rem;
   text-shadow: 0 0 0.5rem rgb(153, 153, 153);
 }
 
 span {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 .playing {
   transform: scale(1.02);
@@ -98,4 +114,109 @@ aside div {
   display: flex;
   flex-direction: column;
   align-self: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    padding: 3.5rem 2rem 0;
+  }
+  .songs {
+    grid-template-columns: repeat(auto-fill, minmax(12%, 1fr));
+  }
+  kbd {
+    margin-top: 1rem;
+  }
+  span {
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  main {
+    padding: 3.5rem 2rem 0;
+  }
+  .songs {
+    grid-template-columns: repeat(auto-fill, minmax(12%, 1fr));
+  }
+  kbd {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  span {
+    font-size: 0.8rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 599px) {
+  h1 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 2.5rem 1.5rem 0;
+  }
+  aside {
+    grid-template-columns: 1fr;
+  }
+  button {
+    width: 10rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .songs {
+    grid-template-columns: repeat(auto-fill, minmax(12%, 1fr));
+    grid-auto-rows: minmax(13rem, auto);
+  }
+  .song_key {
+    width: 1.2rem;
+    height: 8rem;
+    border-bottom-left-radius: 5px;
+    background-color: var(--color-black);
+  }
+  .song_key_finish {
+    height: 8rem;
+  }
+  kbd {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  span {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  main {
+    padding: 2rem 1rem 0;
+  }
+  aside {
+    grid-template-columns: 1fr;
+  }
+  button {
+    width: 10rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .songs {
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-auto-rows: minmax(13rem, auto);
+  }
+  .song_key {
+    width: 1.2rem;
+    height: 8rem;
+    border-bottom-left-radius: 5px;
+    background-color: var(--color-black);
+  }
+  .song_key_finish {
+    height: 8rem;
+  }
+  kbd {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  span {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
 }
