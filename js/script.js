@@ -14,6 +14,11 @@ function play(e) {
   playSound(key);
 }
 
+function playClick(e) {
+  click = e.srcElement.getAttribute("data-key");
+  playSound(click);
+}
+
 function musicCucaracha() {
   const keys = {
     do: 65,
@@ -69,3 +74,4 @@ function musicCucaracha() {
 }
 
 window.addEventListener("keydown", play);
+window.addEventListener("click", playClick);
